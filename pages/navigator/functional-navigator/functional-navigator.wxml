@@ -1,0 +1,4 @@
+<!-- sample.wxml -->
+<functional-page-navigator name="loginAndGetUserInfo" bind:success="loginSuccess">
+  <button>Log in to the plug-in</button>
+</functional-page-navigator>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00f",
+    "navigationBarTitleText": "WeChat swiper",
+    "navigationBarTextStyle": "white"
+  }
+}

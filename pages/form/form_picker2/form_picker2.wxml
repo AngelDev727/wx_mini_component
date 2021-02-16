@@ -1,0 +1,16 @@
+<!--pages/form/form_picker2/form_picker2.wxml-->
+<view>
+    <view>{{year}}-{{month}}-{{day}},</view>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+            <view wx:for="{{years}}" style="line-height: 50px">{{item}}Year</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{months}}" style="line-height: 50px">{{item}}Month</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{days}}" style="line-height: 50px">{{item}}Day</view>
+        </picker-view-column>
+    </picker-view>
+</view>
+

@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> Get avatar nickname</button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <text class="userinfo-city">{{userInfo.city}}</text>
+            <text class="userinfo-gender">{{userInfo.gender == 1 ? "Male" : "Female"}}</text>
+            <text class="userinfo-language">{{userInfo.language}}</text>
+            <text class="userinfo-country">{{userInfo.country}}</text>
+            <text class="userinfo-province" >{{userInfo.province == "" ? "Province is unknown" : userInfo.province}}</text>
+        </block>
+    </view>
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
+    <official-account></official-account>
+
+    <view class="btn-area">
+        <button bindtap="bindViewTapProfile"> My Profile</button>
+        <button bindtap="bindViewTapScroll"> Scroll </button>
+        <button bindtap="bindViewTapSwiper"> TapSwiper </button>
+        <button bindtap="bindViewTapIcon"> Icons </button>
+        <button bindtap="bindViewTapText"> Text </button>
+        <button bindtap="bindViewProgress"> Progress </button>
+        <button bindtap="bindViewForm"> Form Battons</button>
+        <button bindtap="bindViewFormPicker"> Form Picker</button>
+        <button bindtap="bindViewFormPicker2"> Form Picker 2 </button>
+        <button bindtap="bindViewFormSwitch"> Form Switch </button>
+
+        <button bindtap="bindViewFormFunctionalNavigator"> functional-page-navigator </button>
+        <button bindtap="bindViewFormFunctionalNavigatorAll"> All navigator </button>
+
+        <button bindtap="bindViewMediaAudio"> View Media Audio </button>
+        <button bindtap="bindViewMediaImage"> View Media Image </button>
+        <button bindtap="bindViewMediaCamera"> View Media camera</button>
+        <button bindtap="bindViewMediaVideo"> View Media Video</button>
+
+        <button bindtap="bindViewMap"> view Map</button>
+        <button bindtap="bindViewCanvas"> View Canvas</button>
+        <button bindtap="bindViewWebview"> View Webview</button>
+        
+    </view>
+    <view style="height:100px"></view>
+</view>

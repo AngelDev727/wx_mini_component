@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/scroll/scroll",
+    "pages/swiper/swiper",
+    "pages/icons/icons",
+    "pages/text/text",
+    "pages/progress/progress",
+    "pages/form/form_picker/form_picker",
+    "pages/form/index/index",
+    "pages/form/form_picker2/form_picker2",
+    "pages/form/switch/switch",
+    "pages/media/m_audio/m_audio",
+    "pages/media/m_camera/m_camera",
+    "pages/media/m_image/m_image",
+    "pages/media/m_video/m_video",
+    "pages/map_view/map_view",
+    "pages/canvas/canvas",
+    "pages/navigator/functional-navigator/functional-navigator",
+    "pages/navigator/navigator/navigator",
+    "pages/navigator/redirect/redirect",
+    "pages/navigator/navigate/navigate",
+    "pages/profile/profile",
+    "pages/web-view/web-view"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00f",
+    "navigationBarTitleText": "WeChat mini",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

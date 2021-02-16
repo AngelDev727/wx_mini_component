@@ -1,0 +1,51 @@
+<!--pages/form/switch/switch.wxml-->
+<view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+    <switch bindchange="switch2Change"/>
+</view>
+
+<view class="section section_gap">
+<view class="section__title">The form component is within the label</view>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="label-1" wx:for="{{checkboxItems}}">
+    <label>
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="label-1__icon">
+        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      <text class="label-1__text">{{item.value}}</text>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+
+<view class="section section_gap">
+<view class="section__title">label uses for to identify form components</view>
+<radio-group class="group" bindchange="radioChange">
+  <view class="label-2" wx:for="{{radioItems}}">
+    <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+    <view class="label-2__icon">
+      <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+    </view>
+    <label class="label-2__text" for="{{item.name}}"><text>{{item.name}}</text></label>
+  </view>
+</radio-group>
+</view>
+
+
+<view class="section">
+        <view class="section__title">flex-direction: row</view>
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item bc_green">1</view>
+            <view class="flex-item bc_red">2</view>
+            <view class="flex-item bc_blue">3</view>
+        </view>
+    </view>
+    <view class="section">
+          <view class="section__title">flex-direction: column</view>
+          <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+                <view class="flex-item bc_green">1</view>
+                <view class="flex-item bc_red">2</view>
+                <view class="flex-item bc_blue">3</view>
+          </view>
+    </view>

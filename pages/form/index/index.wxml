@@ -1,0 +1,48 @@
+<!--pages/form/index/index.wxml-->
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+  disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+  disabled="{{disabled}}" bindtap="primary"> primary </button>
+<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+  disabled="{{disabled}}" bindtap="warn"> warn </button>
+<button bindtap="setDisabled">Set the disabled property</button>
+<button bindtap="setPlain">Set the plain property</button>
+<button bindtap="setLoading">Set the loading property</button>
+<button open-type="contact">Enter a customer service chat</button>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">Get user information.</button>
+<button open-type="openSetting">Open the authorization setting page</button>
+
+
+<checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+</checkbox-group>
+
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+</radio-group>
+
+
+<view class="section section_gap">
+  <text class="section__title"> sets step</text>
+  <view class="body-view">
+    <slider bindchange="slider2change" step="5"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title"> displays the current value</text>
+  <view class="body-view">
+    <slider bindchange="slider3change" show-value/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title"> sets the minimum/maximum value </text>
+  <view class="body-view">
+    <slider bindchange="slider4change" min="50" max="200" show-value/>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/form/form_picker/form_picker.wxss */
+.section__title {
+  margin-top: 20px;
+  color: blue;
+}

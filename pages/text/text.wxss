@@ -1,0 +1,9 @@
+/* pages/text/text.wxss */
+.body-view button, .body-view text {
+  /* margin-top: 10px; */
+}
+
+.usermotto {
+  margin-top: 50px;
+  background-color: yellow;
+}
